@@ -1,6 +1,22 @@
-# Marsolab Tap
+# Homebrew Tap for Marsolab
 
-## How do I install these formulae?
+## PlainQ
+
+Install the latest packaged PlainQ release:
+
+```sh
+brew install marsolab/tap/plainq
+```
+
+Then start the server:
+
+```sh
+plainq serve --auth.jwt.secret="$(openssl rand -hex 32)"
+```
+
+## Other formulae
+
+Install any formula published in this tap with:
 
 `brew install marsolab/tap/<formula>`
 
